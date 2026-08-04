@@ -2,10 +2,7 @@ package com.javanauta.usuario.infrastructure.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor //com todos os argumentos/paramêtros
 @NoArgsConstructor // sem argumentos/paramêtros
 @Entity //Identifica que é uma tabela, assim como o @Collum para informar que é uma coluna
+@Builder
 @Table(name = "usuario") //Indica o nome da tabela
 public class Usuario implements UserDetails { // Para que o usuário seja validado como usuário de login e senha
 
