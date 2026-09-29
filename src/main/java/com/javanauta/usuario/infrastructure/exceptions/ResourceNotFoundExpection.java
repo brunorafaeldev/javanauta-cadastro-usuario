@@ -1,12 +1,12 @@
 package com.javanauta.usuario.infrastructure.exceptions;
 
-public class ResourceNotFoundExpection extends RuntimeException {
+public class ResourceNotFoundException extends RuntimeException {
 
-    public ResourceNotFoundExpection(String mensage) {
+    public ResourceNotFoundException(String mensage) {
         super(mensage);
     }
 
-    public ResourceNotFoundExpection(String mensage, Throwable throwable) {
+    public ResourceNotFoundException(String mensage, Throwable throwable) {
         super(mensage, throwable);
 
     }
