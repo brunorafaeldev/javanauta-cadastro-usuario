@@ -1,13 +1,16 @@
 package com.javanauta.usuario.infrastructure.exceptions;
 
-import javax.naming.AuthenticationException;
+
+import org.springframework.security.core.AuthenticationException;
 
 public class UnauthorizedException extends AuthenticationException {
 
-    public UnauthorizedException(String mensage) {super(mensage);}
+    public UnauthorizedException(String mensage) {
+        super(mensage);
+    }
 
-    public UnauthorizedException(String mensage, Throwable throwable) {
+    public UnauthorizedException(String mensage, Throwable cause) {
 
-        super (mensage);
+        super (mensage, cause);
     }
 }
